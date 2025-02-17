@@ -9,12 +9,12 @@ import lombok.Data;
 @Builder
 public class User {
 
-    public int id;
-    public String username;
-    public String firstName;
-    public String lastName;
-    public String email;
-    public String password;
-    public String phone;
-    public int userStatus;
+    private int id;
+    private String username;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String password;
+    private String phone;
+    private int userStatus;
 }
