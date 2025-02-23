@@ -57,7 +57,8 @@ jobs:
         keep_reports: 20
 
     - name: Publish Report
-      if: always()
+      # if: always()
+      if: ${{ success() || failure() }}
       uses: peaceiris/actions-gh-pages@v2
       env:
         PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
